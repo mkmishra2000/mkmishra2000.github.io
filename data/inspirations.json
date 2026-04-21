@@ -1,0 +1,40 @@
+{
+  "inspirations": [
+    {
+      "name": "Ericcson Prof. Roland",
+      "field": "5G & Wireless Technology",
+      "influence": "Pioneer in wireless technology and 5G standards. His groundbreaking work on mobile networks continues to inspire innovations in telecommunications.",
+      "link": "https://www.example.com"
+    },
+    {
+      "name": "Vint Cerf",
+      "field": "Internet Architecture",
+      "influence": "Co-designer of TCP/IP protocol. His vision for scalable, interoperable network architectures shaped modern internet infrastructure.",
+      "link": "https://www.vintcerf.com"
+    },
+    {
+      "name": "Grace Hopper",
+      "field": "Computer Science & Programming",
+      "influence": "Computing pioneer and visionary. Her contributions to programming languages and computing education continue to inspire generations of engineers.",
+      "link": "https://www.example.com"
+    },
+    {
+      "name": "Hedy Lamarr",
+      "field": "Communication & Frequency Hopping",
+      "influence": "Inventor of spread spectrum technology. Her innovative approach to secure communications laid the foundation for modern wireless technologies.",
+      "link": "https://www.example.com"
+    },
+    {
+      "name": "Dr. Richard Stallman",
+      "field": "Open Source & Software Freedom",
+      "influence": "Advocate for free and open-source software. His philosophy on collaborative development has transformed the technology industry.",
+      "link": "https://www.stallman.org"
+    },
+    {
+      "name": "Linus Torvalds",
+      "field": "Software Development & Linux",
+      "influence": "Creator of Linux kernel. Demonstrated how collaborative, open-source projects can create robust, globally-adopted technologies.",
+      "link": "https://www.linuxfoundation.org"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "publications": [
+    {
+      "title": "Advanced Signal Processing Techniques in 5G Networks",
+      "authors": "Manas Kumar Mishra, John Smith, Alice Johnson",
+      "year": 2024,
+      "journal": "IEEE Transactions on Wireless Communications",
+      "volume": "23",
+      "issue": "4",
+      "pages": "2841-2856",
+      "link": "https://doi.org/10.1109/TWC.2024.3214567",
+      "type": "journal"
+    },
+    {
+      "title": "Machine Learning Applications in Network Optimization",
+      "authors": "Manas Kumar Mishra, Elena Rodriguez",
+      "year": 2024,
+      "journal": "Proceedings of the 2024 International Conference on Communications",
+      "volume": "1",
+      "issue": "1",
+      "pages": "456-462",
+      "link": "https://doi.org/10.1109/ICC.2024.10391824",
+      "type": "conference"
+    },
+    {
+      "title": "Edge Computing and IoT Integration for Smart Cities",
+      "authors": "Manas Kumar Mishra, David Chen, Sarah Wilson",
+      "year": 2023,
+      "journal": "Journal of Network and Systems Management",
+      "volume": "31",
+      "issue": "3",
+      "pages": "1-25",
+      "link": "https://doi.org/10.1007/s10922-023-09754-z",
+      "type": "journal"
+    },
+    {
+      "title": "Quantum Computing in Modern Telecommunications",
+      "authors": "Manas Kumar Mishra",
+      "year": 2023,
+      "journal": "Computing Reviews Quarterly",
+      "volume": "12",
+      "issue": "2",
+      "pages": "78-92",
+      "link": "https://doi.org/10.1145/3654321",
+      "type": "journal"
+    },
+    {
+      "title": "Cybersecurity Protocols for Industrial IoT Systems",
+      "authors": "Manas Kumar Mishra, Marco Rossi, Jennifer Lee",
+      "year": 2023,
+      "journal": "ACM Transactions on Cyber-Physical Systems",
+      "volume": "5",
+      "issue": "1",
+      "pages": "13:1-13:28",
+      "link": "https://doi.org/10.1145/3601234",
+      "type": "conference"
+    }
+  ]
+}

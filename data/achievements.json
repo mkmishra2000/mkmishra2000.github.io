@@ -1,0 +1,46 @@
+{
+  "achievements": [
+    {
+      "title": "Accepted at KTH Royal Institute of Technology",
+      "date": "2024-04",
+      "description": "Accepted as a researcher at KTH Sweden's prestigious program in advanced telecommunications and network engineering.",
+      "category": "Academic",
+      "icon": "🎓"
+    },
+    {
+      "title": "Senior Engineer at NOKIA",
+      "date": "2023-06",
+      "description": "Promoted to Senior Engineer position at NOKIA, leading research initiatives in 5G and network optimization.",
+      "category": "Professional",
+      "icon": "💼"
+    },
+    {
+      "title": "IEEE Best Paper Award",
+      "date": "2024-02",
+      "description": "Received the IEEE Best Paper Award for 'Advanced Signal Processing Techniques in 5G Networks' at the International Communications Conference.",
+      "category": "Award",
+      "icon": "🏆"
+    },
+    {
+      "title": "Research Excellence Recognition",
+      "date": "2023-12",
+      "description": "Recognized for outstanding contributions to research in machine learning applications for network optimization.",
+      "category": "Recognition",
+      "icon": "⭐"
+    },
+    {
+      "title": "Guest Lecturer at Top Universities",
+      "date": "2023-09",
+      "description": "Invited as a guest lecturer at three top European universities to speak on emerging trends in telecommunications.",
+      "category": "Speaking",
+      "icon": "🎤"
+    },
+    {
+      "title": "Patents Published",
+      "date": "2023-08",
+      "description": "Two patents published related to innovative IoT and edge computing solutions for smart systems.",
+      "category": "Innovation",
+      "icon": "💡"
+    }
+  ]
+}

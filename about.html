@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - mkmishra2000</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">mkmishra2000</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publications.html">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="achievements.html">Achievements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="inspirations.html">Inspirations</a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="theme-toggle" class="theme-toggle ms-2">🌙 Dark</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <h1>About Me</h1>
+            <p class="subtitle">Researcher | Engineer | Innovator</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <section class="section">
+                <div class="row align-items-center">
+                    <div class="col-md-4 text-center mb-4">
+                        <img id="about-avatar" src="Images/Myimages.jpeg" alt="Profile" class="profile-image" style="width: 250px; height: 250px;">
+                    </div>
+                    <div class="col-md-8">
+                        <h2 class="section-title">Who I Am</h2>
+                        <p id="about-bio" class="lead">
+                            Passionate researcher with a keen interest in telecommunications, network optimization, and emerging technologies. 
+                            Currently pursuing research at KTH Royal Institute of Technology in Sweden, with prior experience at NOKIA where I contributed 
+                            to cutting-edge innovations in 5G and network systems.
+                        </p>
+                        <p>
+                            My academic journey has been driven by a desire to bridge the gap between theoretical research and practical applications. 
+                            I believe that innovation thrives at the intersection of rigorous scientific inquiry and real-world problem-solving.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section class="section">
+                <h2 class="section-title">Education</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>KTH Royal Institute of Technology</h5>
+                            </div>
+                            <div class="card-body">
+                                <p><strong>Position:</strong> Researcher</p>
+                                <p><strong>Field:</strong> Telecommunications & Network Engineering</p>
+                                <p><strong>Period:</strong> 2024 - Present</p>
+                                <p class="text-muted">Advancing research in 5G networks, edge computing, and IoT integration.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Master's Degree</h5>
+                            </div>
+                            <div class="card-body">
+                                <p><strong>Field:</strong> Computer Engineering</p>
+                                <p><strong>Focus:</strong> Telecommunications & Network Systems</p>
+                                <p><strong>GPA:</strong> 3.8/4.0</p>
+                                <p class="text-muted">Specialized in 5G technologies, machine learning applications in networks, and distributed systems.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Professional Experience -->
+            <section class="section">
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="publication-item">
+                    <div class="publication-title">Senior Engineer / Principal Researcher</div>
+                    <div class="publication-meta"><strong>Organization:</strong> NOKIA</div>
+                    <div class="publication-meta"><strong>Period:</strong> 2021 - 2024</div>
+                    <p class="mt-3">
+                        Led research initiatives in 5G network optimization, machine learning integration, and cybersecurity protocols. 
+                        Mentored junior engineers and contributed to multiple patent applications. Presented research at international conferences.
+                    </p>
+                </div>
+                <div class="publication-item mt-3">
+                    <div class="publication-title">Research Intern</div>
+                    <div class="publication-meta"><strong>Organization:</strong> NOKIA Networks</div>
+                    <div class="publication-meta"><strong>Period:</strong> 2019 - 2021</div>
+                    <p class="mt-3">
+                        Developed novel algorithms for network traffic prediction. Conducted performance analysis of emerging wireless technologies. 
+                        Collaborated with cross-functional teams on innovation projects.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Research Interests -->
+            <section class="section">
+                <h2 class="section-title">Research Interests</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">📡 5G & Beyond Networks</h5>
+                                <p class="card-text">Next-generation wireless technologies, network optimization, and spectrum management.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">🤖 Machine Learning Systems</h5>
+                                <p class="card-text">ML applications in network management, predictive analytics, and intelligent optimization.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">🌐 Edge Computing</h5>
+                                <p class="card-text">Distributed computing, IoT integration, and latency-critical applications.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">🔐 Cybersecurity</h5>
+                                <p class="card-text">Network security protocols, encryption technologies, and threat prevention systems.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section class="section">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <h5 class="text-kth-blue">Programming Languages</h5>
+                        <div class="mt-2">
+                            <span class="badge">Python</span>
+                            <span class="badge">C++</span>
+                            <span class="badge">Java</span>
+                            <span class="badge">JavaScript</span>
+                            <span class="badge">MATLAB</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h5 class="text-kth-blue">Tools & Frameworks</h5>
+                        <div class="mt-2">
+                            <span class="badge">TensorFlow</span>
+                            <span class="badge">Keras</span>
+                            <span class="badge">PyTorch</span>
+                            <span class="badge">Docker</span>
+                            <span class="badge">Kubernetes</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h5 class="text-kth-blue">Specializations</h5>
+                        <div class="mt-2">
+                            <span class="badge">5G Networks</span>
+                            <span class="badge">Network Optimization</span>
+                            <span class="badge">ML in Networks</span>
+                            <span class="badge">Edge Computing</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section class="section text-center">
+                <h2 class="section-title mb-4">Let's Connect</h2>
+                <p class="lead mb-4">I'm always interested in collaborating on innovative research projects and discussing emerging technologies.</p>
+                <div>
+                    <a href="mailto:manasmkm850@gmail.com" class="btn btn-primary me-2">Email Me</a>
+                    <a href="https://linkedin.com/in/mkmishra2000" target="_blank" class="btn btn-secondary me-2">LinkedIn</a>
+                    <a href="https://github.com/mkmishra2000" target="_blank" class="btn btn-secondary">GitHub</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Manas Kumar Mishra. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/mkmishra2000" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/mkmishra2000" target="_blank">LinkedIn</a>
+                <a href="https://twitter.com/mkmishra2000" target="_blank">Twitter</a>
+                <a href="mailto:manasmkm850@gmail.com">Email</a>
+            </div>
+            <p style="font-size: 0.85rem; margin-top: 1rem; opacity: 0.8;">Hosted on GitHub Pages | Built with Bootstrap & Love</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="js/theme.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/data-loader.js"></script>
+</body>
+</html>

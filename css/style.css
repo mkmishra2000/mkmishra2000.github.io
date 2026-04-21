@@ -1,0 +1,524 @@
+/* ====================================
+   KTH + NOKIA Inspired Color Palette
+   ==================================== */
+
+:root {
+    /* Light Mode Colors */
+    --kth-blue: #003662;
+    --nokia-blue: #0066CC;
+    --light-bg: #f8f9fa;
+    --text-dark: #333333;
+    --text-muted: #666666;
+    --border-color: #dddddd;
+    --white: #ffffff;
+    
+    /* Dark Mode Colors */
+    --dark-bg: #1a1a1a;
+    --dark-text: #e8e8e8;
+    --dark-text-muted: #b3b3b3;
+    --dark-border: #444444;
+    
+    /* Current Theme (Light) */
+    --bg-primary: var(--light-bg);
+    --text-primary: var(--text-dark);
+    --text-secondary: var(--text-muted);
+    --border: var(--border-color);
+    --card-bg: var(--white);
+}
+
+body.dark-mode {
+    --bg-primary: var(--dark-bg);
+    --text-primary: var(--dark-text);
+    --text-secondary: var(--dark-text-muted);
+    --border: var(--dark-border);
+    --card-bg: #2a2a2a;
+}
+
+/* ====================================
+   General Styles
+   ==================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    line-height: 1.6;
+}
+
+/* ====================================
+   Navbar Styling
+   ==================================== */
+
+.navbar {
+    background-color: var(--kth-blue) !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+    color: var(--white) !important;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-weight: 500;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--nokia-blue) !important;
+}
+
+.nav-link.active {
+    color: var(--nokia-blue) !important;
+    border-bottom: 3px solid var(--nokia-blue);
+}
+
+.theme-toggle {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    color: var(--white);
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--nokia-blue);
+    border-color: var(--nokia-blue);
+}
+
+/* ====================================
+   Hero Section
+   ==================================== */
+
+.hero-section {
+    background: linear-gradient(135deg, var(--kth-blue) 0%, #004d7f 100%);
+    color: var(--white);
+    padding: 80px 0;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: -1px;
+}
+
+.hero-section .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+    color: var(--nokia-blue);
+    font-weight: 500;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid var(--nokia-blue);
+    object-fit: cover;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* ====================================
+   Main Content
+   ==================================== */
+
+main {
+    flex: 1;
+    padding: 40px 0;
+}
+
+.section {
+    padding: 60px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+.section-title {
+    color: var(--kth-blue);
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid var(--nokia-blue);
+    display: inline-block;
+}
+
+/* ====================================
+   Cards
+   ==================================== */
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    color: var(--text-primary);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    border-color: var(--nokia-blue);
+}
+
+.card-header {
+    background-color: rgba(0, 54, 98, 0.08);
+    border-bottom: 2px solid var(--nokia-blue);
+    color: var(--kth-blue);
+    font-weight: 600;
+}
+
+.card-title {
+    color: var(--kth-blue);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    color: var(--text-secondary);
+}
+
+/* ====================================
+   Badges & Tags
+   ==================================== */
+
+.badge {
+    background-color: var(--nokia-blue);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin: 0.25rem;
+    display: inline-block;
+}
+
+.badge.achievement {
+    background-color: var(--kth-blue);
+}
+
+.badge.category {
+    background-color: rgba(0, 102, 204, 0.2);
+    color: var(--nokia-blue);
+    border: 1px solid var(--nokia-blue);
+}
+
+/* ====================================
+   Buttons
+   ==================================== */
+
+.btn-primary {
+    background-color: var(--kth-blue);
+    border-color: var(--kth-blue);
+    color: var(--white);
+    font-weight: 600;
+    padding: 0.7rem 2rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #002a4d;
+    border-color: #002a4d;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 54, 98, 0.3);
+}
+
+.btn-secondary {
+    background-color: var(--nokia-blue);
+    border-color: var(--nokia-blue);
+    color: var(--white);
+    font-weight: 600;
+    padding: 0.7rem 2rem;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #0052a3;
+    border-color: #0052a3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+}
+
+.btn-outline-primary {
+    color: var(--kth-blue);
+    border-color: var(--kth-blue);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--kth-blue);
+    border-color: var(--kth-blue);
+}
+
+/* ====================================
+   Links
+   ==================================== */
+
+a {
+    color: var(--nokia-blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--kth-blue);
+    text-decoration: underline;
+}
+
+/* ====================================
+   Footer
+   ==================================== */
+
+footer {
+    background-color: var(--kth-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 60px;
+    font-size: 0.95rem;
+}
+
+footer a {
+    color: var(--nokia-blue);
+}
+
+footer a:hover {
+    color: var(--white);
+}
+
+.social-links {
+    margin: 1rem 0;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 0.8rem;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
+/* ====================================
+   Publication & Achievement Items
+   ==================================== */
+
+.publication-item {
+    padding: 1.5rem;
+    border-left: 4px solid var(--nokia-blue);
+    background-color: var(--card-bg);
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.publication-item:hover {
+    background-color: rgba(0, 102, 204, 0.05);
+    border-left-color: var(--kth-blue);
+}
+
+.publication-title {
+    color: var(--kth-blue);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.publication-meta {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.achievement-item {
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: var(--card-bg);
+    margin-bottom: 1.5rem;
+    border-top: 4px solid var(--kth-blue);
+    transition: all 0.3s ease;
+}
+
+.achievement-item:hover {
+    background-color: rgba(0, 54, 98, 0.05);
+    border-top-color: var(--nokia-blue);
+    transform: translateY(-3px);
+}
+
+.achievement-icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+    display: inline-block;
+}
+
+.achievement-content h3 {
+    color: var(--kth-blue);
+    margin-bottom: 0.3rem;
+}
+
+/* ====================================
+   Inspiration Cards
+   ==================================== */
+
+.inspiration-card {
+    background-color: var(--card-bg);
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.inspiration-card:hover {
+    border-color: var(--nokia-blue);
+    box-shadow: 0 8px 20px rgba(0, 102, 204, 0.15);
+    transform: translateY(-5px);
+}
+
+.inspiration-name {
+    color: var(--kth-blue);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.inspiration-field {
+    color: var(--nokia-blue);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.inspiration-influence {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* ====================================
+   Responsive Design
+   ==================================== */
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-section .subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .nav-link {
+        margin: 0.3rem 0;
+    }
+    
+    footer {
+        font-size: 0.85rem;
+    }
+    
+    .social-links a {
+        margin: 0 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section {
+        padding: 40px 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 1.5rem;
+    }
+    
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .section {
+        padding: 30px 0;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* ====================================
+   Utility Classes
+   ==================================== */
+
+.text-kth-blue {
+    color: var(--kth-blue);
+}
+
+.text-nokia-blue {
+    color: var(--nokia-blue);
+}
+
+.bg-kth-blue {
+    background-color: var(--kth-blue);
+}
+
+.bg-nokia-blue {
+    background-color: var(--nokia-blue);
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
