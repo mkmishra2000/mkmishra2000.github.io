@@ -1,13 +1,29 @@
 {
   "name": "Manas Kumar Mishra",
   "email": "manasmkm850@gmail.com",
-  "title": "Researcher | Engineer | KTH Sweden",
-  "bio": "Passionate researcher with experience at NOKIA and upcoming researcher at KTH Royal Institute of Technology. Dedicated to advancing technology through innovative research and collaborative development.",
+  "title": "Researcher | Engineer | Signal Processing & Communication Systems",
+  "bio": "Researcher at KTH Royal Institute of Technology with expertise in signal processing and communication systems. Previously Senior Engineer at NOKIA driving 5G innovations. Graduated from IIITDM Kancheepuram with BTech (Honors) and MTech in Signal Processing & Communication Systems.",
   "avatarUrl": "Images/Myimages.jpeg",
+  "researchKeywords": ["Signal Processing", "Communication Systems", "5G Networks", "IoT", "Embedded Systems", "Network Optimization"],
+  "education": [
+    {
+      "degree": "MTech",
+      "field": "Signal Processing & Communication Systems",
+      "institution": "IIITDM Kancheepuram",
+      "year": "2019"
+    },
+    {
+      "degree": "BTech (Honors)",
+      "field": "Engineering",
+      "institution": "IIITDM Kancheepuram",
+      "year": "2017"
+    }
+  ],
   "social": {
     "github": "https://github.com/mkmishra2000",
     "linkedin": "https://linkedin.com/in/mkmishra2000",
     "twitter": "https://twitter.com/mkmishra2000",
-    "email": "mailto:manasmkm850@gmail.com"
+    "email": "mailto:manasmkm850@gmail.com",
+    "scholar": "https://scholar.google.com/citations?user=Nd_M_FwAAAAJ&hl=en"
   }
 }

@@ -68,22 +68,30 @@
         <div class="container">
             <!-- Filter Section -->
             <section class="section">
-                <h2 class="section-title">Filter Publications</h2>
+                <h2 class="section-title">Filter & Search Publications</h2>
                 <div class="row mt-4">
-                    <div class="col-md-3 mb-3">
-                        <button class="btn btn-outline-primary w-100" onclick="dataLoader.renderPublications('publications-list')">All</button>
+                    <div class="col-md-2 mb-3">
+                        <button class="btn btn-outline-primary w-100 btn-sm" onclick="dataLoader.renderPublications('publications-list')">All</button>
                     </div>
-                    <div class="col-md-3 mb-3">
-                        <button class="btn btn-outline-primary w-100" onclick="dataLoader.filterAndRenderPublications('publications-list', 2024)">2024</button>
+                    <div class="col-md-2 mb-3">
+                        <button class="btn btn-outline-primary w-100 btn-sm" onclick="dataLoader.filterAndRenderPublications('publications-list', 2024)">2024</button>
                     </div>
-                    <div class="col-md-3 mb-3">
-                        <button class="btn btn-outline-primary w-100" onclick="dataLoader.filterAndRenderPublications('publications-list', 2023)">2023</button>
+                    <div class="col-md-2 mb-3">
+                        <button class="btn btn-outline-primary w-100 btn-sm" onclick="dataLoader.filterAndRenderPublications('publications-list', 2023)">2023</button>
                     </div>
-                    <div class="col-md-3 mb-3">
-                        <select id="type-filter" class="form-select" onchange="filterByType()">
+                    <div class="col-md-2 mb-3">
+                        <select id="type-filter" class="form-select form-select-sm" onchange="filterByType()">
                             <option value="">All Types</option>
                             <option value="journal">Journal Articles</option>
                             <option value="conference">Conference Papers</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <select id="field-filter" class="form-select form-select-sm" onchange="filterByField()">
+                            <option value="">All Research Fields</option>
+                            <option value="Signal Processing">Signal Processing</option>
+                            <option value="Communication Systems">Communication Systems</option>
+                            <option value="Embedded Systems">Embedded Systems</option>
                         </select>
                     </div>
                 </div>
@@ -103,7 +111,7 @@
                     <div class="col-md-4 mb-3">
                         <div class="card">
                             <div class="card-body">
-                                <div style="font-size: 2.5rem; color: #0066CC;">5</div>
+                            <div style="font-size: 2.5rem; color: #0066CC;">8</div>
                                 <p class="card-text mt-2">Total Publications</p>
                             </div>
                         </div>
@@ -111,7 +119,7 @@
                     <div class="col-md-4 mb-3">
                         <div class="card">
                             <div class="card-body">
-                                <div style="font-size: 2.5rem; color: #003662;">3</div>
+                            <div style="font-size: 2.5rem; color: #003662;">5</div>
                                 <p class="card-text mt-2">Journal Articles</p>
                             </div>
                         </div>
@@ -119,7 +127,7 @@
                     <div class="col-md-4 mb-3">
                         <div class="card">
                             <div class="card-body">
-                                <div style="font-size: 2.5rem; color: #0066CC;">2</div>
+                            <div style="font-size: 2.5rem; color: #0066CC;">3</div>
                                 <p class="card-text mt-2">Conference Papers</p>
                             </div>
                         </div>
@@ -160,11 +168,20 @@
         // Filter by type
         function filterByType() {
             const type = document.getElementById('type-filter').value;
-            if (type) {
-                dataLoader.filterAndRenderPublications('publications-list', null, type);
-            } else {
-                dataLoader.renderPublications('publications-list');
-            }
+            const field = document.getElementById('field-filter').value;
+            filterCombined(null, type, field);
+        }
+
+        // Filter by research field
+        function filterByField() {
+            const type = document.getElementById('type-filter').value;
+            const field = document.getElementById('field-filter').value;
+            filterCombined(null, type, field);
+        }
+
+        // Combined filter logic
+        function filterCombined(year, type, field) {
+            dataLoader.filterAndRenderPublications('publications-list', year, type, field);
         }
     </script>
 </body>
