@@ -15,32 +15,46 @@
       "icon": "💼"
     },
     {
-      "title": "IEEE Best Paper Award",
-      "date": "2024-02",
-      "description": "Received the IEEE Best Paper Award for 'Advanced Signal Processing Techniques in 5G Networks' at the International Communications Conference.",
-      "category": "Award",
-      "icon": "🏆"
+      "title": "8 Publications in Peer-Reviewed Venues",
+      "date": "2024-01",
+      "description": "Published research papers in signal processing, communication systems, and embedded systems across top-tier journals and conferences.",
+      "category": "Academic",
+      "icon": "📚"
     },
     {
-      "title": "Research Excellence Recognition",
+      "title": "MTech from IIITDM Kancheepuram",
+      "date": "2019-06",
+      "description": "Graduated with Master of Technology in Signal Processing & Communication Systems from IIITDM Kancheepuram with distinction.",
+      "category": "Academic",
+      "icon": "🎓"
+    },
+    {
+      "title": "BTech (Honors) from IIITDM Kancheepuram",
+      "date": "2017-06",
+      "description": "Completed Bachelor of Technology (Honors) in Electronics and Communication Engineering with strong academic performance.",
+      "category": "Academic",
+      "icon": "🎓"
+    },
+    {
+      "title": "Research Excellence in Signal Processing",
       "date": "2023-12",
-      "description": "Recognized for outstanding contributions to research in machine learning applications for network optimization.",
+      "description": "Recognized for outstanding contributions to research in signal processing algorithms and communication system design.",
       "category": "Recognition",
       "icon": "⭐"
     },
     {
-      "title": "Guest Lecturer at Top Universities",
-      "date": "2023-09",
-      "description": "Invited as a guest lecturer at three top European universities to speak on emerging trends in telecommunications.",
-      "category": "Speaking",
-      "icon": "🎤"
+      "title": "NOKIA Innovation Award",
+      "date": "2022-11",
+      "description": "Awarded for innovative contributions to 5G network optimization and machine learning-based resource allocation.",
+      "category": "Award",
+      "icon": "🏆"
     },
     {
-      "title": "Patents Published",
-      "date": "2023-08",
-      "description": "Two patents published related to innovative IoT and edge computing solutions for smart systems.",
-      "category": "Innovation",
-      "icon": "💡"
+      "title": "Guest Lecturer at Technical Universities",
+      "date": "2023-09",
+      "description": "Invited as a guest lecturer to conduct seminars on 5G technologies, signal processing, and IoT systems.",
+      "category": "Speaking",
+      "icon": "🎤"
     }
   ]
 }

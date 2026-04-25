@@ -54,6 +54,8 @@ class DataLoader {
                 </div>
                 <div class="publication-meta">
                     ${pub.type ? `<span class="badge">${pub.type}</span>` : ''}
+                    ${pub.field ? `<span class="badge category" style="margin-left: 0.5rem;">${pub.field}</span>` : ''}
+                    ${pub.citations ? `<span class="badge" style="background-color: #003662; margin-left: 0.5rem;">📊 ${pub.citations} citations</span>` : ''}
                 </div>
             </div>
         `).join('');
@@ -139,7 +141,7 @@ class DataLoader {
         }
     }
 
-    async filterAndRenderPublications(containerId, year = null, type = null) {
+    async filterAndRenderPublications(containerId, year = null, type = null, field = null) {
         const data = await this.loadData('publications.json');
         if (!data || !data.publications) return;
 
@@ -150,6 +152,9 @@ class DataLoader {
         }
         if (type) {
             filtered = filtered.filter(pub => pub.type === type);
+        }
+        if (field) {
+            filtered = filtered.filter(pub => pub.field === field);
         }
 
         const container = document.getElementById(containerId);
@@ -176,6 +181,15 @@ class DataLoader {
                     ${pub.volume ? ` | Vol. ${pub.volume}` : ''}
                     ${pub.issue ? ` | Issue ${pub.issue}` : ''}
                     ${pub.pages ? ` | pp. ${pub.pages}` : ''}
+                </div>
+                <div class="publication-meta">
+                    ${pub.type ? `<span class="badge">${pub.type}</span>` : ''}
+                    ${pub.field ? `<span class="badge category" style="margin-left: 0.5rem;">${pub.field}</span>` : ''}
+                    ${pub.citations ? `<span class="badge" style="background-color: #003662; margin-left: 0.5rem;">📊 ${pub.citations} citations</span>` : ''}
+                </div>
+            </div>
+        `).join('');
+    }
                 </div>
                 <div class="publication-meta">
                     ${pub.type ? `<span class="badge">${pub.type}</span>` : ''}

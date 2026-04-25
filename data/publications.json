@@ -1,17 +1,10 @@
 {
   "publications": [
     {
-      "title": "Adaptive Signal Processing for MIMO-OFDM Systems in Millimeter-Wave Communications",
-      "authors": "Manas Kumar Mishra, Prof. Rajesh Sharma, Dr. Ellen Holm",
-      "year": 2024,
-      "journal": "IEEE Transactions on Signal Processing",
-      "volume": "72",
-      "issue": "6",
-      "pages": "1847-1861",
-      "link": "https://scholar.google.com/citations?user=Nd_M_FwAAAAJ",
-      "type": "journal",
-      "field": "Signal Processing",
-      "citations": 8
+      "title": "Smart textile materials for monitoring ECG signals",
+      "authors": "JM Subashini, Pajjuri Pranjali Padmaja, Manas Kumar Mishra, Rohini Palanisamy, Pandiyarasan Veluswamy",
+      "year": 2022,
+      "journal": "2022 IEEE International Conference on Emerging Electronics (ICEE)"
     },
     {
       "title": "Resource Allocation Optimization in 5G Networks Using Machine Learning",
